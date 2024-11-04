@@ -4,6 +4,9 @@
     /*--border-color: rgb(151, 0, 133)*/
     --border-color: rgb(151, 29, 80);
 }
+* {
+    color: white;
+}
 
 .navbar {
     background-color: var(--nav-color);
@@ -13,12 +16,15 @@
     padding: 10px;
     margin: 0;
 }
-.info {
-    padding-top: 100px;
-}
+
 a {
     text-decoration: none;
     font-family: "Noto Sans Mono", sans-serif;
+}
+
+.navbar a {
+    color: white;
+    padding: 0 10px;
 }
 
 .title {
@@ -30,18 +36,41 @@ a {
     border-right: 2px solid white;
 }
 
-.quote {
-    
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3vw;
 }
 
-.navbar a {
-    color: white;
-    padding: 0 10px;
+.quote {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote > p {
+    font-size: 1rem;
+}
+
+.future {
+    background-color: rgb(63, 63, 63);
+    padding: 0 2vw;
+}
+
+.lorem1 {
+    padding: 0 2vw;
+}
+
+.lorem2 {
+    padding: 0 2vw;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(223, 223, 223);
+    background-color: var(--bg-color);
     overflow: hidden;
 }
