@@ -6,6 +6,7 @@
 }
 * {
     color: white;
+    font-family: "Noto Sans Mono", sans-serif;
 }
 
 .navbar {
@@ -19,7 +20,6 @@
 
 a {
     text-decoration: none;
-    font-family: "Noto Sans Mono", sans-serif;
 }
 
 .navbar a {
@@ -43,16 +43,35 @@ a {
     padding-top: 3vw;
 }
 
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 8rem;
+    margin: 0;
+}
+
+.heading > * {
+    margin: 0;
+    padding: 0;
+}
+
 .quote {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2vw;
 }
 
 .quote > p {
     font-size: 1rem;
+}
+
+.quote > h3 {
+    text-align: center;
 }
 
 .future {
@@ -65,12 +84,20 @@ a {
 }
 
 .lorem2 {
+    background-color: rgb(63, 63, 63);
     padding: 0 2vw;
+}
+
+.quiz {
+    padding: 0 2vw;
+}
+
+.quiz > form > input{
+    background-color: rgb(63, 63, 63);
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
-    overflow: hidden;
 }

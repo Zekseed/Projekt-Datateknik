@@ -1,0 +1,7 @@
+.info {
+    padding: 0;
+}
+
+.heading > * {
+    color: rgb(50, 50, 50)
+}
